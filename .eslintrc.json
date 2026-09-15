@@ -1,0 +1,60 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier"
+  ],
+  "env": {
+    "es2022": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "ignorePatterns": [
+    "node_modules/",
+    "dist/",
+    ".expo/",
+    "packages/data/src/types/database.ts"
+  ],
+  "rules": {
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_"
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/metro.config.js",
+        "**/babel.config.js"
+      ],
+      "rules": {
+        "@typescript-eslint/no-require-imports": "off"
+      },
+      "env": {
+        "node": true
+      }
+    },
+    {
+      "files": [
+        "packages/ui/src/LogoOssApp.tsx"
+      ],
+      "rules": {
+        "@typescript-eslint/no-require-imports": "off"
+      }
+    }
+  ]
+}

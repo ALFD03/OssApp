@@ -1,0 +1,41 @@
+# Dependencias
+node_modules/
+.npm/
+
+# Builds
+dist/
+build/
+*.tsbuildinfo
+
+# Expo
+.expo/
+.expo-shared/
+android/
+ios/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# Entorno
+.env
+.env.*
+!.env.example
+
+# Supabase
+supabase/.branches/
+supabase/.temp/
+supabase/.env
+
+# Sistema / editores
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*
+.vscode/
+.idea/
+*~
+*.swp

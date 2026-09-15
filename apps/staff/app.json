@@ -1,0 +1,62 @@
+{
+  "expo": {
+    "name": "OssApp Staff",
+    "slug": "ossapp-staff",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "scheme": "ossappstaff",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "primaryColor": "#A81C2E",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ossapp.staff",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "OssApp usa la camara para escanear el codigo QR del dojo y registrar la asistencia.",
+        "NSPhotoLibraryUsageDescription": "OssApp accede a tus fotos para que puedas adjuntar el comprobante de pago."
+      }
+    },
+    "android": {
+      "package": "com.ossapp.staff",
+      "adaptiveIcon": {
+        "backgroundColor": "#16120F"
+      },
+      "versionCode": 1,
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "POST_NOTIFICATIONS"
+      ]
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#F7F4F1",
+          "dark": {
+            "backgroundColor": "#100D0C"
+          },
+          "resizeMode": "contain"
+        }
+      ],
+      "expo-font",
+      "expo-sharing",
+      [
+        "expo-notifications",
+        {
+          "color": "#A81C2E"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "backgroundColor": "#F7F4F1",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    }
+  }
+}
